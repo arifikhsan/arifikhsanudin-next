@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <div className='border-t border-green-400'>
@@ -7,13 +9,20 @@ export default function Footer() {
             <h4 className='font-bold text-md'>Related Pages</h4>
             <div className='mt-3 space-y-1'>
               <p>Projects</p>
-              <p>Blogs</p>
+              <Link href='/posts'>
+                <p>Blog Posts</p>
+              </Link>
             </div>
           </div>
           <div>
             <h4 className='font-bold text-md'>Get in Touch</h4>
             <div className='mt-3 space-y-1'>
-              <p>GitHub</p>
+              <a
+                href='https://www.github.com/arifikhsan'
+                target='_blank'
+                rel='noreferrer'>
+                GitHub
+              </a>
             </div>
           </div>
           <div>
@@ -30,6 +39,12 @@ export default function Footer() {
               <p>Deploy to vps</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className='bg-gradient-to-r from-emerald-500 to-green-500'>
+        <div className='p-4 max-w-5xl mx-auto'>
+          <p className='text-center text-white'>@2023</p>
         </div>
       </div>
     </div>
