@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)'],
-        display: ['var(--font-red-hat)'],
+        display: ['var(--font-montserrat)'],
       }
     },
   },
