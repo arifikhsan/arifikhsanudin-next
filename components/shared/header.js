@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className='border-b border-green-500'>
+    <div className=''>
       <div className='bg-gradient-to-r from-emerald-500 to-green-500'>
         <div className='p-1 text-center'>
         <p className='text-sm text-white'>Currently available for a freelance project</p>
