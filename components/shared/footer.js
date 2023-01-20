@@ -8,7 +8,9 @@ export default function Footer() {
           <div>
             <h4 className='font-bold text-md'>Related Pages</h4>
             <div className='mt-3 space-y-1'>
-              <p>Projects</p>
+              <Link href='/projects' className='block'>
+                <p>Projects</p>
+              </Link>
               <Link href='/posts' className='block'>
                 <p>Blog Posts</p>
               </Link>
