@@ -1,5 +1,4 @@
 import DefaultLayout from '../../components/layout/default-layout';
-import { fetchEntries } from '../../utils/contentful-posts.js';
 import client from '../../utils/apollo-client';
 import { gql } from '@apollo/client/core';
 import { getBlogPosts } from '../../repository/contentful-repository';
