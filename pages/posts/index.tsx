@@ -16,7 +16,7 @@ export default function Posts({ posts }) {
         {posts.map((post) => (
           <div key={post.sys.id}>
             <Link href={`posts/${post.slug}`}>
-              <h2 className='font-black text-3xl'>{post.title}</h2>
+              <h2 className='text-3xl font-black'>{post.title}</h2>
             </Link>
             <p className='text-sm text-gray-500'>{post.sys.publishedAt}</p>
           </div>

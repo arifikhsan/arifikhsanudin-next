@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <div className=''>
-      <div className='p-4 md:pt-8 md:pb-16 max-w-5xl mx-auto'>
+      <div className='max-w-5xl p-4 mx-auto md:pt-8 md:pb-16'>
         <div className='flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:justify-between'>
           <div>
             <h4 className='font-bold text-md'>Related Pages</h4>
@@ -53,7 +53,7 @@ export default function Footer() {
       </div>
 
       <div className='bg-gradient-to-r from-emerald-500 to-green-500'>
-        <div className='p-4 max-w-5xl mx-auto'>
+        <div className='max-w-5xl px-4 py-8 mx-auto'>
           <p className='text-center text-white'>@2023</p>
         </div>
       </div>
