@@ -6,14 +6,13 @@ export default function DefaultLayout({ children }) {
   return (
     <div>
       <Head>
-        <title>Welcome</title>
-        <meta name="description" content="Welcome to my website" />
+        <title>Welcome to my Webiste | Arif Ikhsanudin</title>
+        <meta name='description' content='Welcome to my website' />
+        <link rel='icon' type='image/x-icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <div className='max-w-5xl mx-auto p-4'>
-        {children}
-      </div>
+      <div className='max-w-5xl p-4 mx-auto'>{children}</div>
       <Footer />
     </div>
-  )
+  );
 }
