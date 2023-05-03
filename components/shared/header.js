@@ -14,18 +14,18 @@ export default function Header() {
         </div>
       </div> */}
       <div className='max-w-5xl px-4 py-6 mx-auto'>
-        <div className='flex sm:flex-row sm:items-center justify-between'>
+        <div className='flex justify-between sm:flex-row sm:items-center'>
           <Link href='/'>
-            <HomeModernIcon className='h-8 w-8 text-green-500' />
+            <HomeModernIcon className='w-8 h-8 text-green-500' />
           </Link>
           <div className='sm:hidden'>
-            <Bars3Icon className='h-8 w-8 text-green-500' />
+            <Bars3Icon className='w-8 h-8 text-green-500' />
           </div>
-          <div className='hidden sm:flex text-md flex-row items-center space-x-4'>
+          <div className='flex-row items-center hidden space-x-4 sm:flex text-md'>
             <Link href='/projects'>
               <div
                 className={classNames(
-                  'px-4 py-2 font-bold hover:text-green-500 transition duration-500',
+                  'px-4 py-2 font-semibold hover:text-green-500 transition duration-500',
                   { 'text-green-500': router.pathname.includes('projects') }
                 )}>
                 Projects
@@ -34,7 +34,7 @@ export default function Header() {
             <Link href='/posts'>
               <div
                 className={classNames(
-                  'px-4 py-2 font-bold hover:text-green-500 transition duration-500',
+                  'px-4 py-2 font-semibold hover:text-green-500 transition duration-500',
                   { 'text-green-500': router.pathname.includes('posts') }
                 )}>
                 Blog Posts

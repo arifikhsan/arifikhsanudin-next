@@ -16,19 +16,23 @@ export default function Projects({ projects }) {
           {projects.map((project) => {
             return (
               <div key={project.slug} className='relative'>
-                <Image
-                  src={project.displayImage.url}
-                  alt={project.displayImage.title}
-                  width={project.displayImage.width}
-                  height={project.displayImage.height}
-                  priority
-                />
-                <h1 className='mt-4 text-3xl font-black text-emerald-600'>
-                  {project.name}
-                </h1>
-                <p className='mt-2 text-gray-700'>{project.description}</p>
+                <Link href={`/projects/${project.slug}`}>
+                  <Image
+                    src={project.displayImage.url}
+                    alt={project.displayImage.title}
+                    width={project.displayImage.width}
+                    height={project.displayImage.height}
+                    priority
+                  />
+                  <h1 className='mt-4 text-3xl font-black text-emerald-600'>
+                    {project.name}
+                  </h1>
+                  <p className='mt-2 text-gray-700'>{project.body}</p>
+                </Link>
                 <Link href={project.link} target='_blank'>
-                  <button className='px-4 py-2 mt-4 text-sm tracking-wider text-white uppercase rounded bg-emerald-600'>demo</button>
+                  <button className='px-4 py-2 mt-4 text-sm tracking-wider text-white uppercase rounded bg-emerald-600'>
+                    demo
+                  </button>
                 </Link>
               </div>
             );

@@ -33,6 +33,13 @@ export const getProject = async (slug) => {
           items {
             name
             slug
+            displayImage {
+              title
+              contentType
+              url
+              width
+              height
+            }
             body {
               json
             }
