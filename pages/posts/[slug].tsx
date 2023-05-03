@@ -1,5 +1,5 @@
 import DefaultLayout from '../../components/layout/default-layout';
-import { getBlogPost } from '../../repository/contentful-repository';
+import { getBlogPost } from '../../repository/blog-post-repository';
 import client from '../../utils/apollo-client';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 

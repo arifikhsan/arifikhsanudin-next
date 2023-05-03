@@ -1,7 +1,7 @@
 import DefaultLayout from '../../components/layout/default-layout';
 import client from '../../utils/apollo-client';
 import { gql } from '@apollo/client/core';
-import { getBlogPosts } from '../../repository/contentful-repository';
+import { getBlogPosts } from '../../repository/blog-post-repository';
 import Link from 'next/link';
 
 export default function Posts({ posts }) {
