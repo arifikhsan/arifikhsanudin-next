@@ -15,7 +15,7 @@ export default function Home() {
         </p>
         <a
           target='_blank'
-          href='/CV_Arif Ikhsanudin_March 2023_compressed.pdf'
+          href='/CV_Arif Ikhsanudin_May 2023.pdf'
           className='inline-block px-4 py-2 mt-4 font-semibold text-white transition duration-500 bg-gradient-to-r from-emerald-500 to-green-500 hover:font-bold'>
           View Curriculum Vitae
         </a>
